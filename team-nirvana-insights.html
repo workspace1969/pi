@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Insights | Team Nirvana</title>
+<meta name="description" content="Short reads on AI, branding, lead generation, pay for performance, and preparing a company to sell, from a C-level team with thirty years in the work.">
+<link rel="canonical" href="https://teamnirvanausa.com/team-nirvana-insights.html">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Team Nirvana">
+<meta property="og:title" content="Insights | Team Nirvana">
+<meta property="og:description" content="Short reads on AI, branding, lead generation, pay for performance, and preparing a company to sell, from a C-level team with thirty years in the work.">
+<meta property="og:url" content="https://teamnirvanausa.com/team-nirvana-insights.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Insights | Team Nirvana">
+<meta name="twitter:description" content="Short reads on AI, branding, lead generation, pay for performance, and preparing a company to sell, from a C-level team with thirty years in the work.">
+<meta name="theme-color" content="#FAFAF8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ============ Tokens ============ */
+:root{
+  --paper:#FAFAF8; --ink:#0A0E1F; --cobalt:#2646FF; --yellow:#FFD23F; --violet:#7A5CFF;
+  --coral:#FF5A36; --teal:#0FB5A6; --amber:#F5A524;
+  --nav-h:64px;
+  --pad:clamp(20px,5vw,72px);
+  --max:1240px;
+  --chapter:clamp(88px,12vw,168px);
+  --r-lg:28px; --r-md:18px; --r-sm:12px;
+  box-sizing:border-box;
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(var(--nav-h) + env(safe-area-inset-top,0px) + 16px);-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size:17px;line-height:1.55;font-weight:400;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+@media (min-width:768px){body{font-size:19px}}
+h1,h2,h3,h4,p,ul,ol{margin:0}
+ul,ol{padding:0;list-style:none}
+a{color:inherit}
+img,svg,canvas,video{display:block;max-width:100%}
+button{font:inherit;color:inherit}
+
+/* ============ Chapter theming ============ */
+.chapter{
+  --bg:var(--paper); --fg:var(--ink);
+  --muted:rgba(10,14,31,.7); --line:rgba(10,14,31,.14); --tile:rgba(10,14,31,.045);
+  --accent:var(--cobalt); --focus:var(--cobalt);
+  position:relative;background:var(--bg);color:var(--fg);
+}
+.chapter[data-theme="dark"]{
+  --bg:var(--ink); --fg:var(--paper);
+  --muted:rgba(250,250,248,.72); --line:rgba(250,250,248,.18); --tile:rgba(250,250,248,.06);
+  --accent:var(--paper); --focus:var(--yellow);
+}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--pad)}
+.chapter-pad{padding-block:var(--chapter)}
+
+/* ============ Type ============ */
+h1,h2{font-weight:800;letter-spacing:-.02em;line-height:1.05;text-wrap:balance}
+#who-h,#hl-h,#where-h,#why-h,#part-h,#proof-h,#ins-h{font-size:clamp(40px,7vw,108px);letter-spacing:-.03em;line-height:1.02;max-width:16ch}
+h1{font-size:clamp(44px,6vw,72px)}
+h2{font-size:clamp(34px,4.4vw,52px);max-width:20ch}
+h3{font-size:24px;font-weight:700;letter-spacing:-.01em;line-height:1.2}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;line-height:1.4;color:var(--muted)}
+.chapter[data-theme="light"] .chapter-head .eyebrow{color:var(--cobalt)}
+.chapter-head{display:grid;gap:18px;margin-bottom:clamp(40px,6vw,72px)}
+.muted{color:var(--muted)}
+
+/* ============ Buttons ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:48px;padding:12px 26px;border-radius:999px;border:1.5px solid var(--cobalt);
+  background:var(--cobalt);color:#fff;font-size:15px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;line-height:1.2;text-align:center;text-decoration:none;
+  cursor:pointer;transition:background-color .2s,color .2s,border-color .2s;
+}
+.btn:hover{background:#1B36D6;border-color:#1B36D6}
+.btn.ghost{background:transparent;color:var(--fg);border-color:currentColor}
+.btn.ghost:hover{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn-sm{min-height:40px;padding:8px 18px;font-size:13px}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px}
+:focus-visible{outline:3px solid var(--focus,#2646FF);outline-offset:3px;border-radius:6px}
+.btn:focus-visible{border-radius:999px}
+
+/* ============ Nav ============ */
+.nav{
+  --nfg:var(--ink); --nbg:rgba(250,250,248,.74); --nline:rgba(10,14,31,.1); --focus:var(--cobalt);
+  position:fixed;inset:0 0 auto 0;z-index:50;
+  padding-top:env(safe-area-inset-top,0px);
+  color:var(--nfg);background:var(--nbg);border-bottom:1px solid var(--nline);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
+  transition:background-color .3s,color .3s,border-color .3s;
+}
+.nav[data-theme="dark"]{--nfg:var(--paper);--nbg:rgba(10,14,31,.72);--nline:rgba(250,250,248,.14);--focus:var(--yellow)}
+.nav-in{height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1.1}
+.brand-name{font-weight:800;font-size:19px;letter-spacing:-.02em}
+.brand-blue{color:var(--cobalt);transition:color .3s}
+.nav[data-theme="dark"] .brand-blue{color:#6B82FF}
+.brand-slogan{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;opacity:.72;margin-top:3px}
+.nav-right{display:flex;align-items:center;gap:8px}
+.nav-links{display:none;align-items:center;gap:4px}
+.nav-links a{padding:10px 14px;font-size:15px;font-weight:500;text-decoration:none;border-radius:999px;opacity:.86}
+.nav-links a:hover{opacity:1;background:var(--nline)}
+.nav .btn{transition:background-color .3s,color .3s,border-color .3s}
+.nav[data-theme="dark"] .btn{background:var(--paper);border-color:var(--paper);color:var(--ink)}
+.menu-btn{
+  display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;
+  background:none;border:0;border-radius:999px;cursor:pointer;
+}
+.menu-btn span,.menu-btn span::before{content:"";display:block;width:20px;height:2px;border-radius:2px;background:currentColor;transition:transform .25s}
+.menu-btn span{transform:translateY(-3px)}
+.menu-btn span::before{transform:translateY(6px)}
+.menu-btn[aria-expanded="true"] span{transform:rotate(45deg)}
+.menu-btn[aria-expanded="true"] span::before{transform:rotate(-90deg)}
+.nav.menu-open{--nbg:var(--paper)}
+.nav.menu-open[data-theme="dark"]{--nbg:var(--ink)}
+.nav-sheet{display:none;padding:4px 0 20px}
+.nav-sheet.open{display:block}
+.nav-sheet a{display:block;padding:14px 0;font-size:22px;font-weight:700;letter-spacing:-.01em;text-decoration:none;border-top:1px solid var(--nline)}
+@media (min-width:768px){
+  .nav-links{display:flex}
+  .menu-btn,.nav-sheet,.nav-sheet.open{display:none}
+  .nav-right{gap:14px}
+}
+
+.nb{white-space:nowrap}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:12px;top:-60px;z-index:60;background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:600}
+.skip:focus{top:calc(10px + env(safe-area-inset-top,0px))}
+
+/* ---- shared sub-page pieces ---- */
+.page-head{padding-block:calc(var(--nav-h) + clamp(64px,9vw,128px)) clamp(48px,6vw,88px)}
+.page-head h1{font-size:clamp(40px,5.6vw,80px);letter-spacing:-.03em;line-height:1.03;max-width:18ch}
+.page-head .lede{margin-top:clamp(18px,2.2vw,28px);max-width:36em;font-size:clamp(19px,1.7vw,23px);line-height:1.5;color:var(--muted)}
+.cta-band{min-height:70vh;display:grid;grid-template-rows:1fr auto}
+.cta-body{display:grid;gap:28px;justify-items:center;align-content:center;text-align:center;padding-block:clamp(72px,10vw,140px)}
+.cta-body h2{font-size:clamp(36px,5vw,64px);max-width:22ch}
+.cta-body p{max-width:46em;color:var(--muted)}
+.cta-body .btn{min-height:56px;padding-inline:34px;font-size:16px}
+.footer{border-top:1px solid var(--line);padding:24px 0 28px;text-align:center;font-size:14px;color:var(--muted)}
+.footer a{text-underline-offset:3px}
+.nav-links a[aria-current="page"]{opacity:1;background:var(--nline)}
+.arrow-link{display:inline-flex;align-items:center;gap:12px;font-size:17px;font-weight:600;text-decoration:none}
+.arrow-link svg{width:26px;height:14px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s ease}
+.arrow-link:hover svg{transform:translateX(8px)}
+.ph-box{position:relative;border-radius:var(--r-md);background:#D3D5DB;overflow:hidden}
+.chapter[data-theme="dark"] .ph-box{background:#2B3048}
+.ph-box span{position:absolute;left:14px;bottom:12px;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(10,14,31,.6)}
+.chapter[data-theme="dark"] .ph-box span{color:rgba(250,250,248,.62)}
+.ph-box.video::after{content:"";position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;border:1.5px solid currentColor;opacity:.55;background:no-repeat 56% 50%/18px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M4 2l12 7-12 7z' fill='%23888'/%3E%3C/svg%3E")}
+@media (prefers-reduced-motion:no-preference){
+  .js .rv{opacity:0;transform:translateY(24px);transition:opacity .6s cubic-bezier(.2,.7,.2,1),transform .6s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--i,0) * 80ms)}
+  .js .rv.in{opacity:1;transform:none}
+}
+
+.ins{padding-bottom:var(--chapter)}
+.ins-grid{display:grid;gap:clamp(40px,5vw,72px) clamp(20px,2.6vw,36px)}
+.art{display:grid;gap:14px;align-content:start}
+.art .ph-box{aspect-ratio:16/10;margin-bottom:8px}
+.art .tag{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--cobalt)}
+.art h2{font-size:clamp(22px,2vw,28px);letter-spacing:-.015em;line-height:1.18;max-width:none;text-wrap:pretty}
+.art h2 a{text-decoration:none}
+.art h2 a:hover{color:var(--cobalt)}
+.art p{color:var(--muted);font-size:17px}
+.art .arrow-link{margin-top:6px;font-size:15px}
+@media (min-width:768px){.ins-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" data-theme="light">
+  <div class="wrap">
+    <div class="nav-in">
+      <a class="brand" href="team-nirvana-index.html" aria-label="Team Nirvana, home"><span class="brand-name">Team <span class="brand-blue">Nirvana</span></span><span class="brand-slogan">Results Delivered</span></a>
+      <div class="nav-right">
+        <nav class="nav-links" aria-label="Primary"><a href="team-nirvana-index.html#services">Our Services</a><a href="team-nirvana-case-studies.html">Case Studies</a><a href="team-nirvana-insights.html" aria-current="page">Insights</a><a href="team-nirvana-contact.html">Contact</a></nav>
+        <a class="btn btn-sm" href="team-nirvana-contact.html#book">Book a call</a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-sheet" aria-label="Menu"><span></span></button>
+      </div>
+    </div>
+    <nav class="nav-sheet" id="nav-sheet" aria-label="Mobile"><a href="team-nirvana-index.html#services">Our Services</a><a href="team-nirvana-case-studies.html">Case Studies</a><a href="team-nirvana-insights.html" aria-current="page">Insights</a><a href="team-nirvana-contact.html">Contact</a></nav>
+  </div>
+</header>
+<main id="main">
+<section class="chapter ins" data-theme="light">
+  <div class="wrap page-head">
+    <p class="eyebrow rv" style="color:var(--cobalt);margin-bottom:18px">How We Think</p>
+    <h1 class="rv">What We’ve Learned the Hard Way.</h1>
+  </div>
+  <div class="wrap"><div class="ins-grid"><article class="art rv" id="article-1" style="--i:0">
+      <div class="ph-box" role="img" aria-label="Image placeholder"></div>
+      <p class="tag">AI and Policy</p>
+      <h2><a href="#article-1">Your AI content policy is a legal document now.</a></h2>
+      <p>Most companies still don’t have one. Here’s what belongs in it and who should sign off.</p>
+      <a class="arrow-link" href="#article-1">Read Article <svg viewBox="0 0 26 14" aria-hidden="true"><path d="M1 7h24M19 1l6 6-6 6"/></svg></a>
+    </article><article class="art rv" id="article-2" style="--i:1">
+      <div class="ph-box" role="img" aria-label="Image placeholder"></div>
+      <p class="tag">AI and Leadership</p>
+      <h2><a href="#article-2">Your most senior person should be running your AI.</a></h2>
+      <p>Not your youngest hire. Judgment is the scarce resource. Tools are not.</p>
+      <a class="arrow-link" href="#article-2">Read Article <svg viewBox="0 0 26 14" aria-hidden="true"><path d="M1 7h24M19 1l6 6-6 6"/></svg></a>
+    </article><article class="art rv" id="article-3" style="--i:0">
+      <div class="ph-box" role="img" aria-label="Image placeholder"></div>
+      <p class="tag">Lead Generation</p>
+      <h2><a href="#article-3">Pipeline math for founders.</a></h2>
+      <p>How many real conversations a quarter actually takes to hit the number you promised your board.</p>
+      <a class="arrow-link" href="#article-3">Read Article <svg viewBox="0 0 26 14" aria-hidden="true"><path d="M1 7h24M19 1l6 6-6 6"/></svg></a>
+    </article><article class="art rv" id="article-4" style="--i:1">
+      <div class="ph-box" role="img" aria-label="Image placeholder"></div>
+      <p class="tag">Mergers and Acquisitions</p>
+      <h2><a href="#article-4">What a buyer sees in your brand before they see your numbers.</a></h2>
+      <p>Valuation starts with the story. How to get your brand ready for diligence a year before you need it.</p>
+      <a class="arrow-link" href="#article-4">Read Article <svg viewBox="0 0 26 14" aria-hidden="true"><path d="M1 7h24M19 1l6 6-6 6"/></svg></a>
+    </article><article class="art rv" id="article-5" style="--i:0">
+      <div class="ph-box" role="img" aria-label="Image placeholder"></div>
+      <p class="tag">Branding</p>
+      <h2><a href="#article-5">Your brand didn’t get old. Your company outgrew it.</a></h2>
+      <p>Five signs it’s time to renew, and how to do it without losing what your customers already trust.</p>
+      <a class="arrow-link" href="#article-5">Read Article <svg viewBox="0 0 26 14" aria-hidden="true"><path d="M1 7h24M19 1l6 6-6 6"/></svg></a>
+    </article><article class="art rv" id="article-6" style="--i:1">
+      <div class="ph-box" role="img" aria-label="Image placeholder"></div>
+      <p class="tag">Partnership Model</p>
+      <h2><a href="#article-6">Pay for performance only works if both sides can see the scoreboard.</a></h2>
+      <p>What to measure, who owns the number, and how to write it into the agreement before the work starts.</p>
+      <a class="arrow-link" href="#article-6">Read Article <svg viewBox="0 0 26 14" aria-hidden="true"><path d="M1 7h24M19 1l6 6-6 6"/></svg></a>
+    </article></div></div>
+</section>
+<section class="chapter cta-band" data-theme="dark">
+  <div class="wrap" style="display:grid;grid-template-rows:1fr auto;min-height:inherit">
+    <div class="cta-body">
+      <h2 class="rv">Bring Us the Problem. We’re Ready to Solve It.</h2>
+      <p class="rv">Thirty minutes with a partner. Not a salesperson. We tell you if we can help. We show you what working together looks like. We take you as a client only if it’s a win-win for us.</p>
+      <a class="btn rv" href="team-nirvana-contact.html#book">Book a call</a>
+    </div>
+    <footer class="footer">© 2026 Team Nirvana. <a href="team-nirvana-privacy.html">Privacy Policy</a>.</footer>
+  </div>
+</section>
+</main>
+<script>
+document.documentElement.classList.add('js');
+document.addEventListener('DOMContentLoaded', function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $ = function (s, r) { return (r || document).querySelector(s); }, $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  /* menu */
+  var mb = $('.menu-btn'), sheet = $('#nav-sheet'), nav = $('.nav');
+  function setMenu(o) { mb.setAttribute('aria-expanded', String(o)); sheet.classList.toggle('open', o); nav.classList.toggle('menu-open', o); }
+  mb.addEventListener('click', function () { setMenu(mb.getAttribute('aria-expanded') !== 'true'); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+  /* in-page links glide */
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href^="#"]'); if (!a) return; var el = document.getElementById(a.getAttribute('href').slice(1)); if (!el) return;
+    e.preventDefault(); window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 88, behavior: reduce ? 'auto' : 'smooth' });
+  });
+  /* nav colour follows the chapter under it */
+  var chapters = $$('.chapter'), meta = $('meta[name="theme-color"]');
+  function theme() {
+    for (var i = 0; i < chapters.length; i++) { var r = chapters[i].getBoundingClientRect(); if (r.top <= 32 && r.bottom > 32) { var t = chapters[i].dataset.theme; if (nav.dataset.theme !== t) { nav.dataset.theme = t; meta.content = t === 'dark' ? '#0A0E1F' : '#FAFAF8'; } break; } }
+  }
+  window.addEventListener('scroll', theme, { passive: true }); theme();
+  /* reveals */
+  var rv = $$('.rv');
+  if ('IntersectionObserver' in window && !reduce) { var io = new IntersectionObserver(function (en) { en.forEach(function (x) { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); } }); }, { rootMargin: '0px 0px -12% 0px' }); rv.forEach(function (el) { io.observe(el); }); }
+  else rv.forEach(function (el) { el.classList.add('in'); });
+  
+});
+</script>
+</body>
+</html>
